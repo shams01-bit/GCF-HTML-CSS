@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sweet Bakery</title>
+
+    <style>
+        /* ================= RESET ================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        section {
+            padding: 30px;
+            margin: 20px;
+            background: white;
+            border-radius: 8px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            color: brown;
+        }
+
+        /* ================= HEADER ================= */
+        header {
+            background: brown;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* ================= HERO ================= */
+        .hero {
+            text-align: center;
+        }
+
+        /* ================= FLEX CARDS ================= */
+        .products {
+            display: flex;
+            gap: 15px;
+        }
+
+        .card {
+            flex: 1;
+            background: #ffe4c4;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100px;
+        }
+
+        /* ================= TABLE ================= */
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: center;
+        }
+
+        /* ================= FORM ================= */
+        form input,
+        form select,
+        form textarea {
+            width: 250px;
+            padding: 6px;
+            margin: 6px 0;
+        }
+
+        button {
+            padding: 8px 15px;
+            background: brown;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* ================= FOOTER ================= */
+        footer {
+            background: brown;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <h1>Sweet Bakery 🍰</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Order</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+        <h2>Welcome to Our Bakery</h2>
+        <p>Fresh cakes, cookies and breads made every day ❤️</p>
+    </section>
+
+
+
+    <!-- ================= ABOUT ================= -->
+    <section>
+        <h2>About Us</h2>
+        <p>
+            We are a small local bakery providing fresh and tasty products.
+            Our goal is to make your day sweeter with delicious food.
+        </p>
+    </section>
+
+
+
+    <!-- ================= PRODUCT CARDS ================= -->
+    <section>
+        <h2>Our Popular Items</h2>
+
+        <div class="products">
+
+            <div class="card">
+                <img src="https://api.floraindia.com/upload/x8i2a54tpp1754035623750.webp" alt="cake">
+                <h3>Chocolate Cake</h3>
+                <p>₹300</p>
+            </div>
+
+            <div class="card">
+                <img src="https://www.browneyedbaker.com/wp-content/uploads/2016/05/white-bread-51-SM.jpg" alt="bread">
+                <h3>Fresh Bread</h3>
+                <p>₹40</p>
+            </div>
+
+            <div class="card">
+                <img src="https://bakewithshivesh.com/wp-content/uploads/2020/05/151F814A-2749-4978-BA53-3AD2A962C933-scaled.jpg" alt="cookies">
+                <h3>Cookies</h3>
+                <p>₹150</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- ================= PRICE TABLE ================= -->
+    <section>
+        <h2>Full Menu Price List</h2>
+
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Cake</td>
+                <td>₹300</td>
+            </tr>
+            <tr>
+                <td>Bread</td>
+                <td>₹40</td>
+            </tr>
+            <tr>
+                <td>Cookies</td>
+                <td>₹150</td>
+            </tr>
+        </table>
+    </section>
+
+
+
+    <!-- ================= ORDER FORM ================= -->
+    <section>
+        <h2>Place Your Order</h2>
+
+        <form>
+
+            Name:<br>
+            <input type="text" placeholder="Enter your name" required><br>
+
+            Phone:<br>
+            <input type="tel" placeholder="Phone number"><br>
+
+            Select Item:<br>
+            <select>
+                <option>Cake</option>
+                <option>Bread</option>
+                <option>Cookies</option>
+            </select><br>
+
+            Quantity:<br>
+            <input type="number" min="1"><br>
+
+            Address:<br>
+            <textarea rows="3"></textarea><br>
+
+            <button type="submit">Order Now</button>
+
+        </form>
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>© 2026 Sweet Bakery | Made with HTML & CSS</p>
+    </footer>
+
+
+</body>
+</html>
