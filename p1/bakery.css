@@ -1,0 +1,143 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        section {
+            padding: 30px;
+            margin: 20px;
+            background: white;
+            border-radius: 8px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            color: brown;
+        }
+
+        /* ================= HEADER ================= */
+        header {
+            background: brown;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* ================= HERO ================= */
+        .hero {
+            text-align: center;
+        }
+
+        /* ================= FLEX CARDS ================= */
+        .products {
+            display: flex;
+            gap: 15px;
+        }
+
+        /* .card { */
+            /* flex: 1; */
+            /* background: #ffe4c4; */
+            /* padding: 15px; */
+            /* border-radius: 6px; */
+            /* text-align: center; */
+        /* } */
+
+        /* .card img { */
+            /* width: 100px; */
+        /* } */
+
+        /* ================= TABLE ================= */
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: center;
+        }
+
+        /* ================= FORM ================= */
+        form input,
+        form select,
+        form textarea {
+            width: 250px;
+            padding: 6px;
+            margin: 6px 0;
+        }
+
+        button {
+            padding: 8px 15px;
+            background: brown;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* ================= FOOTER ================= */
+        footer {
+            background: brown;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* .box {
+            background-color: aquamarine;
+            width: 1220px;
+            height: 500px;
+            padding: 20px;
+            display: flex;
+            gap: 10px;
+            text-align: center; */
+        /* } */
+
+        .container-popular {
+            background-color: white;
+            /* width: 400px; */
+            /* height: 100%; */
+            padding: 40px;
+            margin: 40px;
+            border-radius: 15px;
+            gap: 10px;
+        }
+
+        .child {
+            background-color: #dbeac3;
+            width: 550px;
+            height: 420px;
+            padding: 10px;
+            border-radius: 10px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .price {
+            background-color: white;
+            /* width: 1220px; */
+            /* height: 300px; */
+            padding: 30px;
+            margin: 30px;
+            /* border-radius: 15px; */
+        }
