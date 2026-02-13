@@ -52,7 +52,7 @@ nav ul li a:hover {
 /* ===== HERO SECTION ===== */
 .hero {
     height: 110vh; /* full screen height */
-    background: url("https://imgs.search.brave.com/0BhQdCiHkob_wTbIfB_SPAHYtSjPnr9MC52_lai6rdg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMjE4/MzQ5NzE5MC9waG90/by9kaWdpdGFsbHkt/Y3JlYXRlZC1zZXJ2/ZXItY2xvdWQtY29t/bXVuaWNhdGlvbi1p/bmZyYXN0cnVjdHVy/ZS1iYXNlZC1vbi1m/cmFjdGFsLW1hdGhl/bWF0aWNzLmpwZz9z/PTYxMng2MTImdz0w/Jms9MjAmYz04anhz/U2xzQW95U1pHcGVf/dWF0aC1Ubzhubjly/dXVKYUQ1UTZJVFRS/Tnc4PQ") center/cover no-repeat;
+    background: url("https://www.shutterstock.com/shutterstock/videos/3850868265/thumb/9.jpg?ip=x480") center/cover no-repeat;
     /* Replace hero.jpg with your image name */
 
     display: flex;
@@ -204,3 +204,111 @@ nav ul li a:hover {
 .card:hover {
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+
+.responsive {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.responsive img {
+    width: 100% ;
+}
+
+
+/* Tablet */
+@media(max-width:600px){
+
+    .grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .responsive{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/* Mobile */
+@media(max-width:600px){
+
+    
+/* =================================
+   TABLE
+================================= */
+table,th,td{
+    border:1px solid black;
+    border-collapse:collapse;
+    padding:8px;
+}
+
+
+
+/* =================================
+   FORM
+================================= */
+form{
+    display:flex;
+    flex-direction:column;
+    width:250px;
+}
+
+input,textarea{
+    margin:6px 0;
+    padding:8px;
+}
+
+/*EXTRA*/
+
+    .table{
+        display: flex;
+        flex-direction: column;
+        text-align: center;   
+    }
+
+    .form1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .nav a {
+        color: antiquewhite;
+        background-color: cadetblue;
+        padding: 5px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .flex{
+        flex-direction:column;
+    }
+
+    .cards{
+        flex-direction:column;
+    }
+
+    .desktop{
+        display:none;
+    }
+
+    .mobile{
+        display:block;
+        color:red;
+    }
+}
+
+
